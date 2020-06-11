@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <title>Form Validator</title>
+</head>
+
+<body>
+  <div class="form-group">
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+      <strong>Congratulations!!!</strong> Form has been successfully submitted
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+      </button>
+  </div>
+  <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+          <strong>Ooops!!!</strong> Please recheck the form
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+          </button>
+      </div>
+  <form>
+    <div class="form-group">
+      <label for="name">Username</label>
+      <input type="text" class="form-control" id="name" placeholder="Choose your username">
+      <small id="namevalid" class="form-text text-muted invalid-feedback">
+              Your username must be 2-10 characters long and should not start with a number
+            </small>
+     <small style="color:red"> 
+              This Field Is Required *
+              </small>
+  </div>
+
+  <div class="form-group">
+    <label for="name">First Name</label>
+    <input type="text" class="form-control" id=fname" placeholder="Enter your First Name">
+    <small style="color:red"> 
+      This Field Is Required *
+      </small>
+</div>
+
+<div class="form-group">
+  <label for="name">Middle Name</label>
+  <input type="text" class="form-control" id="mname" placeholder="Enter your Middle Name">
+</div>
+
+<div class="form-group">
+  <label for="name">Last Name</label>
+  <input type="text" class="form-control" id="lname" placeholder="Enter your Last/Surname">
+  <small style="color:red"> 
+    This Field Is Required *
+    </small>
+</div>
+
+  <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter your email">
+      <small id="emailvalid" class="form-text text-muted invalid-feedback">
+              Your email must be a valid email
+            </small>
+      <small style="color:red"> 
+              This Field Is Required *
+              </small>
+  </div>
+  <div class="form-group">
+      <label for="car">Select your Job</label>
+      <select class="form-control" id="car">
+          <option>Web Deveoper</option>
+          <option>App Developer</option>
+          <option>Data Scientist</option>
+          <option>Ethical Hacker</option>
+      </select>
+      <small style="color:red"> 
+        This Field Is Required *
+        </small>
+  </div>
+  <div class="form-group">
+      <label for="address">Enter your address</label>
+      <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+      <small style="color:red"> 
+        This Field Is Required *
+        </small>
+  </div>
+  <div class="form-group">
+      <label for="address">Enter your phone number</label>
+      <input class="form-control" name="phone" id="phone" rows="3">
+      <small id="emailvalid" class="form-text text-muted invalid-feedback">
+              Your phone number must be 10 digit long
+            </small>
+     <small style="color:red"> 
+            This Field Is Required *
+            </small>
+  </div>
+  <div class="form-group">
+      <label for="exampleFormControlTextarea1">Any other message...</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button id="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script src="jquery/jquery.slim.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="indexActual.js"></script>
+</body>
+</html>
